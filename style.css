@@ -138,6 +138,11 @@ body {
   width: 100%;
 }
 
+.modal a  {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* fixed banner */
 
@@ -246,6 +251,7 @@ body .icons a:hover {
 }
 
 .section3 {
+  position: relative;
   padding: 50px;
   margin: 20px;
   width: 100%;

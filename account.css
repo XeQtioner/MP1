@@ -126,7 +126,7 @@
 .content    {
     display: inline-block;
     overflow-y: auto;
-    background-image: url(login1.jpg);
+    background-image: url(./images/login1.jpg);
     background-size: contain;
     position: fixed;
     height:100%;

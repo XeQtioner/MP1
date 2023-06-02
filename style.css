@@ -306,7 +306,6 @@ body .icons a:hover {
 }
 .footer li{
   list-style-type: none;
-  font-size: large;
   font-size: 15px;
   line-height: 40px;
 }
@@ -325,7 +324,6 @@ tr  {
   width: 15%;
   padding: 0;
   margin-top: 0px;
-
   align-items: center;
 }
 
@@ -508,6 +506,7 @@ tr  {
 .overlay {
   background-color: rgba(0,0,0,.5)
 }
+
 .scooter {
     position: relative;
     float: right;
@@ -517,40 +516,52 @@ tr  {
     margin-right: 60px;
   }
 
-  .footer a{
-    text-decoration: none;
-    color: black;
-    
-  
-  }
-  .footer li{
-    list-style-type: none;
-    font-size: large;
-    font-size: 15px;
-    line-height: 40px;
-  }
-  tr  {
-    font-size: 20px;
-    text-align: right;
-    line-height: 50px;
-  }
-  
-  .footer h4{
+  .footer {
+    display: grid;
+    background-color: grey;
+    width: 100%;
+    height: 600px;
     text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .footer img {
-    width: 15%;
-    padding: 0;
-    margin-top: 0px;
-  
-    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style-type: none;
+    position: relative;
   }
 
-  .nav-link:active  collapse  {
-    color: #fffc03;
-    border-color: none;
+ 
+.footer a{
+  text-decoration: none;
+  color: black;
+  
+
+}
+.footer li{
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 10px;
+}
+tr  {
+  font-size: 10px;
+  text-align: center;
+  line-height: 10px;
 }
 
+.footer h4{
+  font-size: small;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer h6  {
+  font-size: small
+}
+
+.footer img {
+  width: 15%;
+  padding: 0;
+  margin-top: 0px;
+  align-items: center;
+}
 }

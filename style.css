@@ -6,7 +6,6 @@
 
 body .container-fluid  {
   padding-right: 0;
-  
 }
 
 .row .container-fluid {
@@ -19,6 +18,10 @@ body {
 	flex-wrap: wrap;
 	min-height: 100vh;
   
+}
+
+.topbar {
+  overflow: hidden;
 }
 
 .scooter {

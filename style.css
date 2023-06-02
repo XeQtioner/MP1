@@ -17,6 +17,10 @@ body {
   overflow: hidden;
 }
 
+.overlay {
+  background-color: rgba(0,0,0,.03)
+}
+
 .scooter {
     position: relative;
     float: right;
@@ -497,4 +501,15 @@ tr  {
   display: inline;
 }
 
+.overlay {
+  background-color: rgba(0,0,0,.5)
+}
+.scooter {
+    position: relative;
+    float: right;
+    height: 76px;
+    animation: mymove 5s ;
+    animation-timing-function: ease-in;
+    margin-right: 50px;
+  }
 }

@@ -341,7 +341,6 @@ tr  {
   transition: .7s;
 }
 
-
 /* resto */
 
 #restopartners  {
@@ -381,19 +380,21 @@ tr  {
 
 .logobox {
 	position: relative;
-	width: 75%;
-	min-height: 220px;
+  margin-top: 10px;
+	width: 90%;
+	height: 220px;
 	overflow: hidden;
-  clip-path: circle(110px);
-  background-image:url('./images/001.gif');
+
 }
 
 .logobox img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+  width: 100%;
 	height: 100%;
+  clip-path: circle(110px);
+  object-fit: contain;
 }
 
 .card h2 {
@@ -407,11 +408,14 @@ tr  {
 
 }
 
+.card-title {
+  height: 50px;
+}
+
 .restolink {
   background-color: #fffc03;
   width: 150%;
   border-radius: 15px;
-  display: flex;
   position: absolute;
 	bottom: 100px;
 	list-style: none;
@@ -585,5 +589,18 @@ tr  {
   text-align: right;
   padding-right: 10px;
   transform: translatey(-150px);
+}
+
+.card:not(:first-child){
+  display: none;
+}
+.card {
+  width: 100%;
+  padding-top: 20px;
+  border-radius: 50px;
+}
+.logobox img {
+  width: 100%;
+  object-fit: contain;
 }
 }

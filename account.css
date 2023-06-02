@@ -1,0 +1,283 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#active {
+    color: #fffc03;
+}
+.container-fluid  {
+    padding: 0;
+}
+
+.collapsedbar   {
+    position: relative;
+    display: block;
+    padding: 0;
+    height: 100%;
+    z-index: 2;
+}  
+
+.collapsedbar  a {
+    display: block;
+    color:aliceblue;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.mainbar   {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.navbaricons a{
+    color:aliceblue;
+}
+
+.navbaricons li{
+    list-style-type: none;
+}
+
+.navbaricons a:active{
+    color:#fffc03;
+}
+
+.navbaricons a:hover{
+    color:#fffc03;
+}
+
+.sidebar    {
+    background-color: darkgray;
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+
+.profilebox {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+
+}
+
+.logo   {
+    margin-top: 20px;
+    margin-left: 65px;
+
+}
+
+.profilebox .logo img{
+    width: 55%;
+    clip-path: circle(57px);
+    border-radius: 45px;
+    object-fit: cover;
+    border: solid thin white;
+}
+
+.profilebox .logoname   {
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    border-bottom: solid thin;
+    
+}
+
+.profilebox .logoname   p{
+    font-size: 10px;
+    text-transform: lowercase;
+}
+
+.sidebarnav    {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+
+.sidebarnav a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.sidebarnav li{
+    display: flexbox;
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    padding-top: 35px;
+    width: 100%
+}
+
+.sidebarnav ul{
+    padding: 0;
+}
+
+.sidebarnav :hover {
+    color:#fffc03;
+}
+
+.content    {
+    display: inline-block;
+    overflow-y: auto;
+    background-image: url(login1.jpg);
+    background-size: contain;
+    position: fixed;
+    height:100%;
+    padding-top: 140px;
+}
+
+/* .container-fluid    {
+    background-image: url(restaurant1.jpg);
+} */
+
+.menu {
+    justify-content: center;
+    background-color: #fffc03;
+    padding-left: 300px;
+    padding-top: 20px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.menu li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu a{
+    color: black;
+}
+
+.booking    {
+    margin-left: 400px;
+    margin-top: 10px;
+    width: 60%;
+    padding: 20px;
+    height: 150px;
+    background-color:rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    border-radius: 35px; 
+    margin-bottom: 10px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.restologo  {
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.restologo  img{
+    width: 80%;
+    clip-path: circle();
+    border-radius: 50px;
+    object-fit: contain;
+    border: solid thin black;
+}
+
+.customer   {
+    color: white;
+    padding-top: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.status p{
+    color: chartreuse;
+}
+
+.riderlogo  {
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.riderlogo  img{
+    width: 90%;
+    clip-path: circle();
+    border-radius: 45px;
+    object-fit: contain;
+    border: solid thin black;
+}
+
+.riderlogo .logoname   {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.modal-dialog, .modal-content  {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+.customer-info  {
+    border: solid thin #fffc03;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.customeraddress    {
+    border: solid thin #fffc03;
+    border-radius: 15px;
+    padding: 15px;
+    height: 250px;
+}
+
+#bookingModal label, span {
+    font-size: x-large;
+}
+
+.modal a{
+    color: aliceblue;
+    float: right;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button  {        
+    -webkit-appearance: none;
+}
+
+#phonesearch .modal-dialog, #newaccountModal .modal-dialog, #addaddress .modal-dialog,
+#addfirstaddressModal .modal-dialog  {
+    background-color: transparent;
+}
+
+#phonesearch .modal-content, #newaccountModal .modal-content, #addaddress .modal-content,
+#addfirstaddressModal .modal-content    {
+    background-color: rgba(0, 0, 0, .8);
+    border: solid thin #fffc03;
+    color: black;
+}
+
+.modal-header {
+    color: aliceblue;
+}
+
+#unreg {
+    color: aliceblue;
+}
+
+.modal button{
+    background-color: #fffc03;
+    color: black;
+
+}
+
+.modal button:hover{
+    background-color:black;
+    color: #fffc03;
+    border: solid thin chartreuse;
+}

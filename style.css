@@ -150,6 +150,10 @@ body {
   color: black;
 }
 
+#reset  {
+  color:chartreuse;
+}
+
 
 /* fixed banner */
 
@@ -543,5 +547,10 @@ tr  {
   
     align-items: center;
   }
+
+  .nav-link:active  collapse  {
+    color: #fffc03;
+    border-color: none;
+}
 
 }

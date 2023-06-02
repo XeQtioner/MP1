@@ -278,6 +278,7 @@ body .icons a:hover {
 
 .section3content  {
   isolation: isolate;
+  padding: 50;
 }
 
 
@@ -455,7 +456,30 @@ tr  {
 }
 
 @media screen and (max-width:640px) {
-  .card:not(:first-child) {
+  .content img {
+    display: none;
+  }
+  .content video {
+    display: none;
+  }
+
+  .section2  {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .icons li {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+
+  .bannerext{
+    display: none;
+  }
+
+  .banner {
     display: none;
   }
 }

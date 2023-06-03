@@ -264,10 +264,17 @@ body .icons a:hover {
 }
 
 .section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   padding: 50px;
   margin: 20px;
   width: 100%;
+}
+
+.section5 p{
+  color: black;
 }
 
 .section3::before  {
@@ -280,6 +287,20 @@ body .icons a:hover {
 }
 
 .section3content  {
+  isolation: isolate;
+  padding: 50;
+}
+
+.section5::before  {
+  background-image: url('./images/parallax4.jpg');
+  background-size: contain;
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .05;
+}
+
+.section5content  {
   isolation: isolate;
   padding: 50;
 }

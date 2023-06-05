@@ -532,6 +532,15 @@ tr {
     
 }
 
+.wallpost2 .card {
+    display: block;
+    width: 50%;
+    margin: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -692,6 +701,7 @@ tr {
         padding: 33px;
         width: 100%;
     }
+    
 }
 
 @media screen and (max-width:1240px) {
@@ -855,6 +865,13 @@ tr {
         width: 80%;
     }
 
+
+    .wallpost2 .card {
+        width: 90%;
+        margin: 0px;
+        margin-top: 0;
+        display: block;
+    }
 }
 
 
@@ -874,14 +891,15 @@ tr {
     }
 }
 
-#restaurant {
+
+.wallpost2 .card {
     width: 20%;
     margin: 40px;
     margin-top: 0;
     display: inline-block;
 }
 
-#restaurant p    {
+.wallpost2 p    {
     display: none;
 }
 

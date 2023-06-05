@@ -885,3 +885,6 @@ tr {
     display: none;
 }
 
+#distributors p  {
+    text-align: justify;
+}

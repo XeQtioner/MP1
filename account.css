@@ -123,7 +123,7 @@
     color:#fffc03;
 }
 
-.content    {
+.leftcontent    {
     display: inline-block;
     overflow-y: auto;
     background-image: url(./images/login1.jpg);

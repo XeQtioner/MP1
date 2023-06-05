@@ -1,190 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quickzend Partners Feeds and Posts</title>
+    <title>Quickzend Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
 </head>
 
 <body>
+<div class="topbar">
     <div class="container-{breakpoint}">
-        <div class="row d-inline-block position-relative">
-            <div class="container-{breakpoint} fixed-top z-2" style="height: 76px; background-color: rgba(0,0,0,0.1);"></div>
-            <div class="container-{breakpoint} fixed-top bg-white z-0" style="height: 76px;"></div>
-            <div class="container-{breakpoint} fixed-top z-1 pos"><img class="scooter" src="001.gif" alt="scooter" /></div>
+
+        <div class="bgif">
+            <div class="container-{breakpoint} fixed-top bg-white z-1" style="height: 76px;"></div>
+        </div>
+
+        <div class="gif">
+            <div class="container-{breakpoint} fixed-top z-1 pos"><img class="scooter" src="./images/002.gif" alt="scooter" /></div>
+        </div>
+        
+        <div class="overlay">
+            <div class="overlay container-{breakpoint} fixed-top z-2" style="height: 76px; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);"></div>
+        </div>
+
+        <div class="container-{breakpoint} fixed-top">
+            <nav id="mainnavbar" class="navbar navbar-expand-lg mx-0 px-0 d-flex" data-bs-theme="dark">
+                <div class="container-fluid z-1">
+                    <a class="navbar-brand bg-black bg-opacity-75 pe-2" style="border-radius: 25px;" href="index.html"><img src="./images/logo2.png" alt="logo" width="50" /><span>Quickzend</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-three-dots"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-bs-theme="dark">
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a> 
+                            </li>
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active text-bg-secondary opacity-50" style="border-radius: 10px;" aria-current="page" href="feeds.html">Feeds</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="distributors.html">Distributors</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="restaurants.html">Restaurants</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Store-to-door</a></li>
+                                        <li><a class="dropdown-item" href="#">Door-to-door</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item disabled"><h6>Soon to offer</h6></li>
+                                        <li><a class="dropdown-item disabled" href="#">Shopping</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">Bills Collection</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">Fuel Delivery</a></li>
+                                    </ul>
+                            </li>
+
+                            <li class="nav-item dropdown" data-bs-theme="dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                          <li class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#Adminmodal">Admin</li>
+                                        </li>
+                                        
+                                        <li>
+                                          <li class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#Partnermodal">Business Partner</li>
+                                        </li>
+
+                                        <li><hr class="dropdown-divider"/></li>
+                                        
+                                        <li>
+                                          <a class="dropdown-item disabled" href="#">Customer</a>
+                                        </li>
+                                    </ul>
+                                        
+                            </li>
+                                        
+                            <li class="nav-item"><a class="nav-link" href="mall.html">Mall</a></li>
+                            
+                            <li class="download">
+                                <img src="./images/applestore.png" style="border-radius: 5px; height: 40px;background-size: 100%; cursor: pointer;"  href="#" alt="applestore">
+                                <img src="./images/playstore.jpg" style="border-radius: 10px; height: 40px;background-size: 100%; cursor: pointer;"  href="#" alt="playstore">
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- modals -->
+
+        <div>
+            <div class="modal fade" id="Adminmodal">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                   
+                        <div class="modal-header text-bg-dark p-2 opacity-75">
+                            <h5 class="modal-title" style="color:#fffc03">Quickzend Login</h5>
+                        </div>
+                           
+                        <h5>Admin Account</h5>
+                        
+                        <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                                <div>
+                                    <label for="username" class="form-label;">Username:</label>
+                                    <input type="email" class="form-control" id="username" placeholder="xxxxx@email.com" required>
+                                    <div class="valid-feedback">Good!</div>
+                                    <div class="invalid-feedback">Enter a valid user account</div>
+                                </div>
+                                <div>
+                                    <label for="password" class="form-label;">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="xxxxx" required>
+                                    <div class="valid-feedback">Good!</div>
+                                    <div class="invalid-feedback">Incorrect password</div>
+                                    <input class="form-check-input" type="checkbox" id="checkbox">
+                                    <label class="form-check-label fw-light" for="checkbox">Remember me</label><br><br>
+                                    <p class="fw-light">Enter <b>OTP</b> sent to your registered number..</p>
+                                    <div class="d-flex flex-row">
+                                        <input type="text" class="form-control border-black m-1">
+                                        <input type="text" class="form-control border-black m-1">
+                                        <input type="text" class="form-control border-black m-1">
+                                        <input type="text" class="form-control border-black m-1">
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <a href="dashboard2.html" class="btn border-black w-100" style="background-color: #fffc03;">Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Partnermodal">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        
+                        <div class="modal-header text-bg-dark p-2 opacity-75">
+                            <h5 class="modal-title" style="color:#fffc03">Quickzend Login</h5>
+                        </div>
+                        
+                        <h5>Partner Account</h5>
+                        
+                        <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                                <div>
+                                    <label for="username" class="form-label;">Username:</label>
+                                    <input type="email" class="form-control" id="username" placeholder="xxxxxx@email.com" required>
+                                    <div class="valid-feedback">Good!</div>
+                                    <div class="invalid-feedback">Enter a valid user account</div>
+                                </div>
+                                <div>
+                                    <label for="password" class="form-label;">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="xxxxxx" required>
+                                    <div class="valid-feedback">Good!</div>
+                                    <div class="invalid-feedback">Incorrect password</div>
+                                    <input class="form-check-input" type="checkbox" id="checkbox">
+                                    <label class="form-check-label fw-light" for="checkbox">Remember me</label><br><br>
+                                    <p class="fw-light">Forget password? Click here to <a id=reset href="#">Reset..</a></p>
+                                    <div class="d-flex flex-row">
+                                        <div class="w-100">
+                                            <a href="dashboard.html" class="btn border-black w-100" style="background-color: #fffc03;">Login</a>
+                                        </div>
+                                    </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- End of Top Navigation Bar -->   
+    
+    <div class="container-{breakpoint}" style="margin-top: 76px;">
+
+
+        
+<!-- social icons -->
+
+        <div class="icons">
+           <ul>
+                <li><a href="#" alt=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" alt=""><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#" alt=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" alt=""><i class="bi bi-messenger"></i></a></li>
+                <li><a href="#" alt=""><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </div>
+
+
+<!-- wallpost -->
+<div class="mainbar row">
+    <div class="collapsedbar bg-dark col-3">
+        <ul class="navbaricons">
+            <li><a href="#" class="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"><i class="bi bi-list"></i></a></li>
+              <br><br><br><br><br><br><br>
+            <li><a href="dashboard.html" id="active"><i class="bi bi-book"></i></a></li>
+            <li><a href="sales.html"><i class="bi bi-clock-history"></i></i></a></li>
+            <li><a href="charts.html"><i class="bi bi-bar-chart-line"></i></a></li>
+            <li><a href="payout.html"><i class="bi bi-wallet"></i></a></li>
+            <li><a href="index.html"><i class="bi bi-escape"></i></a></li>
+            
+        </ul>
+    </div>
+    <div class="sidebar collapse navbar bg-dark col-9 show" id="sidebar">
+        <div class="profilebox">
+            <div class="logo">
+                <img src="./images/1.jpg" alt="logo">
+            </div>
+            <div class="logoname">
+                <h6>5C Sushi Homes</h6>
+                <p>5Csushihomes@gmail.com</p>
+            </div>
+        </div>
+        <div class="sidebarnav navbar navbar-expand " >
+            <ul>
+                <li><a href="dashboard.html" id="active">Dashboard</a></li>
+                <li><a href="sales.html">Sales Report</a></li>
+                <li><a href="charts.html">Charts</a></li>
+                <li><a href="payout.html">Payout</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="wallpost1">
+       <center>
+
+        <div class="writepost">
+            <div class="card">
+                <div class="form-floating">
+                    <input class="form-control" id="" type="text"  placeholder="Write something..">
+                    <label for=""><i class="bi bi-pencil-fill"></i> Write something..</label>
+                 </div>
+                <div class="card-body">
+                    <span class="x3nfvp2 x1c4vz4f x2lah0s x1emribx"><img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png?_nc_eui2=AeGikwhZyUECqGBlVnkSnRfYVnUPE18ZZ-dWdQ8TXxln54HHLzUkRzMVmpWD6Ip8oRVRixqQvl_Q8fcffFbtIeX0"></span><span>Live Video</span>
+                    <span class="x3nfvp2 x1c4vz4f x2lah0s x1emribx"><img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png?_nc_eui2=AeHod1bQ9Kb4l1wNMWChSribPL4YoeGsw5I8vhih4azDkqqKUJl8WM7XyvI5pb3wv9ST6Tp1LY7rIHfqF-7B4_qP"></span><span>Photos/Videos</span>
+                    <span class="x3nfvp2 x1c4vz4f x2lah0s x1emribx"><img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png?_nc_eui2=AeHRC5aBbyNoJG4Ep0Eu4r-RvPIN-OmHLJy88g346YcsnJPEMsHTORsshTqm6Co9bpONbKWi0kPe12y6VQ_kxXa3"></span><span>Feeling/Activity</span>
+                </div>
+              </div>
+        </div>
+
+        <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/5c1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/5c2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/5c3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/5c4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/5c5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">5C Sushi Home</h5>
+              <p class="card-text">“Made with only the best ingredients by their talented chefs, 5c Sushi Home brings you quality sushi right on your doorstep.”</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Japanese/Korean Cuisine</li>
+              <li class="list-group-item">09954262084</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/fhc1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/fhc2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/fhc3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/fhc4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/fhc5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Food Hub Cavite</h5>
+              <p class="card-text">Bon Appetit is a family-owned business serving freshly baked Pizza & Shawarma.
+                Our team believes in only using 100% fresh ingredients in order to produce the most flavorful product possible.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pizza and Shawarma</li>
+              <li class="list-group-item">09179666082</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/jp1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/jp2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/jp3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/jp4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/jp5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JP's Pizza Amaya</h5>
+              <p class="card-text">Jp's Pizza Amaya Tanza and TEAZONE Milk Tea collaborate to guarantee your pizzatisfaction, and fulfill your life's sweetest pleasure.
+                Happiness Happens At Your Home When You Order To Them..! Satisfy your cravings!</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pizza and MilkTea</li>
+              <li class="list-group-item">09632092522</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/k1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/k2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/k3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/k4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/k5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kitchen101</h5>
+              <p class="card-text">To make your favorite occasion EXTRA SPECIAL and memorable at the same time, try to consider Kitchen101 menu in providing you scrumptious delicacies in its affordable cost. 
+                You can still have your amazing event as they ease out in this pandemic. You may celebrate in various ways like INTIMATE GATHERINGS wherein you're with the most special people in your life, VIRTUALLY, or even by SENDING your loved ones thru FOOD DELIVERIES. 
+                They offer BULK ORDERS, platter servings, solo meals, and the like.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Home Dish/Catering</li>
+              <li class="list-group-item">09058073748</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/y1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/y2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/y3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/y4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/y5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Yara's Grill</h5>
+              <p class="card-text">MAHAL MAMALENGKE!!
+                KAYA BILI NA LANG KAYO NG LUTONG ULAM BAKA MAS MAKAMENOS PA KAYO!
+                Sa Yara's Grill hindi lang Tapsi at mga short order ang available, meron nading LUTONG ULAM na pwede mo pagpilian araw-araw!</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Home Dishes/Eatery</li>
+              <li class="list-group-item">09178435972</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/hv1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/hv2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/hv3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/hv4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/hv5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hidden Vietnam</h5>
+              <p class="card-text">Can't Get Out because of #Pandemic  but your craving for some Vietnamese Food? 🇻🇳
+                Worry No More because  Hidden Vietnam - MAIN offers affordable Vietnamese Street Food and we will deliver their fantastic meals to YOU. 
+                Plus they added some exciting items you can include on your order list. 👍</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Vietnam Cuisine</li>
+              <li class="list-group-item">09069244964</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/g1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/g2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/g3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/g4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/g5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GOGI Box</h5>
+              <p class="card-text">GOGIBOX MNL is Finally here in Cavite 🍱!!!!
+                You can make your own samgyupsal in a box by choosing your favorite meat and side dishes for very affordable price😱😱😱
+                All your cravings will be satisfied!!😍</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Japanese/Korean Cuisine</li>
+              <li class="list-group-item">09272253437</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/s1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/s2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/s3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/s4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/s5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Samjang</h5>
+              <p class="card-text">Annyeong!!
+                Kung tinatamad lumabas kami na po bahala magdeliver sa inyo. 
+                Samjang is a food stall that offers Korean Fried Chicken on the street inspired by korean food flavors that also compliments to the filipino taste.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Korean Cuisine</li>
+              <li class="list-group-item">09756634107</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="parent">
+                <div class="div1"><img src="./images/m1.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div2"><img src="./images/m2.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div3"><img src="./images/m3.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div4"><img src="./images/m4.jpg" class="card-img-top" alt="restopics"></div>
+                <div class="div5"><img src="./images/m5.jpg" class="card-img-top" alt="restopics"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mangrae Tanza</h5>
+              <p class="card-text">Hindi mo na kailangan pumila ng ubod ng haba para matikman ang pinakabagong pinagkakaguluhan ng bayan!! Enjoy Mangrae in the comfort of your home!!</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Refreshments</li>
+              <li class="list-group-item">09206999452</li>
+              <li class="btn"><i class="bi bi-telephone"></i> Call to Order</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Messenger</a>
+            </div>
+          </div>
+
+
+        </center>
+    </div>
+
+    
+
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="row">
+
+            <div class="quicklinks col-3">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href=""><i class="bi bi-caret-right"></i>  Careers</a></li>
+                    <li><a href=""><i class="bi bi-caret-right"></i>  Gallery</a></li>
+                    <li><a href=""><i class="bi bi-caret-right"></i>  Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div class="allrightreserve col">
+                <center>
+                <img src="./images/black icon.png" alt="">
+                <h6><i class="bi bi-c-circle"></i>  2020 <b>Quickzend Company.</b> All Rights Reserved</h6>
+                </center>
+            </div>
+
+            <div class="getintouch col-3">
+
+                <h4>GET IN TOUCH</h4>
+                <ul>
+                    <li><a href=""><i class="bi bi-buildings"></i>Amaya 4 Tanza Cavite</a></li>
+                    <li><a href=""><i class="bi bi-phone"></i>09481433185</a></li>
+                    <li><a href=""><i class="bi bi-envelope"></i>info@quickzend.com</a></li>                    
+                </ul>
+                    
+            </div>
+
+        </div>
+        
+        <div class="bannerext">
+            
+            <div class="row d-flex ps-4" style="border-radius: 15px; background-color: lightgrey;">
+            
+                <div class="col-7 ps-4">
+                    <h3>Jethro-Rabbi</h3>
+                    <h3>Villena c",</h3>
+                </div>
+
+            <div class="col me-1" style="display: flex; justify-content: center; align-items: center; width: 200px;">
+                <button style="width: 210px; height: 45px; border-radius: 15px; background-color: #fffc03; font-weight: 700; letter-spacing: 2px;">CONTACT US</button>
+            </div>
         </div>
     </div>
 
-    <div class="container-{breakpoint} fixed-top">
-        <nav id="mainnavbar" class="navbar navbar-expand-lg mx-0 px-0" data-bs-theme="dark">
-            <div class="container-fluid z-1">
-                <a class="navbar-brand bg-black bg-opacity-75 pe-2" style="border-radius: 25px;" href="index.html">
-              <img src="logo2.png" alt="logo" width="50" />
-              <span>Quickzend</span>
-            </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+</div>            
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-bs-theme="dark">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="feeds.html">Feeds</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="distributors.html">Distributors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="restaurants.html">Restaurants</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Store-to-door</a></li>
-                        <li><a class="dropdown-item" href="#">Door-to-door</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li class="dropdown-item" disabled>
-                            <h6>Soon to offer</h6>
-                        </li>
-                        <li>
-                            <a class="dropdown-item disabled" href="#">Shopping</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item disabled" href="#">Bills Collection</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item disabled" href="#"
-                        >Fuel Delivery</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown" data-bs-theme="dark">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Login</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li>
-                      <li class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#Adminmodal">Admin</li>
-                    <li>
-                      <li class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#Partnermodal">Business Partner</li>
-                    </li>
-                    <li><hr class="dropdown-divider"/></li>
-                    <li>
-                      <a class="dropdown-item disabled" href="#">Customer</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link disabled">Mall</a></li>
-                    </ul>
-                    <form class="input-group d-flex w-50 me-auto ps-4" role="search">
-                        </button>
-                        <input class="form-control bg-transparent text-info" type="search" placeholder="Quick access" aria-label="Search" style="border-start-start-radius: 20px; border-bottom-left-radius: 20px;" />
-                        <button class="btn border focus-ring" style="
-                  border-end-end-radius: 20px;
-                  border-top-right-radius: 20px;
-                  color: darkgray;
-                " type="submit">
-                Search
-              </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </div>
+    
+ 
 
-    <!-- modals -->
-
-    <div class="modal fade" id="Adminmodal">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <div class="modal-header text-bg-dark p-2 opacity-75">
-                    <h5 class="modal-title" style="color:#fffc03">Quickzend Login</h5>
-                </div>
-                    <h5>Admin Account</h5>
-                <div class="modal-body">
-                    <form class="needs-validation" novalidate>
-                        <div>
-                            <label for="username" class="form-label;">Username:</label>
-                            <input type="email" class="form-control" id="username" placeholder="xxxxx@email.com" required>
-                            <div class="valid-feedback">Good!</div>
-                            <div class="invalid-feedback">Enter a valid user account</div>
-                        </div>
-                        <div>
-                            <label for="password" class="form-label;">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="xxxxx" required>
-                            <div class="valid-feedback">Good!</div>
-                            <div class="invalid-feedback">Incorrect password</div>
-                            <input class="form-check-input" type="checkbox" id="checkbox">
-                            <label class="form-check-label fw-light" for="checkbox">Remember me</label><br><br>
-                            <p class="fw-light">Enter <b>OTP</b> sent to your registered number..</p>
-                            <div class="d-flex flex-row">
-                                <input type="text" class="form-control border-black m-1">
-                                <input type="text" class="form-control border-black m-1">
-                                <input type="text" class="form-control border-black m-1">
-                                <input type="text" class="form-control border-black m-1">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button class="btn border-black w-100" style="background-color: #fffc03;">Login</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="Partnermodal">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <div class="modal-header text-bg-dark p-2 opacity-75">
-                    <h5 class="modal-title" style="color:#fffc03">Quickzend Login</h5>
-                </div>
-                    <h5>Partner Account</h5>
-                <div class="modal-body">
-                    <form class="needs-validation" novalidate>
-                        <div>
-                            <label for="username" class="form-label;">Username:</label>
-                            <input type="email" class="form-control" id="username" placeholder="xxxxxx@email.com" required>
-                            <div class="valid-feedback">Good!</div>
-                            <div class="invalid-feedback">Enter a valid user account</div>
-                        </div>
-                        <div>
-                            <label for="password" class="form-label;">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="xxxxxx" required>
-                            <div class="valid-feedback">Good!</div>
-                            <div class="invalid-feedback">Incorrect password</div>
-                            <input class="form-check-input" type="checkbox" id="checkbox">
-                            <label class="form-check-label fw-light" for="checkbox">Remember me</label><br><br>
-                            <p class="fw-light">Forget password? Click here to <a href="#">Reset..</a></p>
-                            <div class="d-flex flex-row">
-                        <div class="col">
-                            <button class="btn border-black w-100" style="background-color: #fffc03;">Login</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Top Navigation Bar -->
 
 </body>
 </html>

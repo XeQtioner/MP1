@@ -643,6 +643,29 @@ tr {
         padding: 33px;
         width: 100%;
     }
+}
 
+@media screen and (max-width:1240px) {
+    .download img   {
+        display: none;
+    }
+}
 
+@media screen and (max-width:1170px) {
+    .bannerext {
+        display: none;
+    }
+    .banner h3 {
+        display: none;
+    }
+    .banner img {
+        width: 50px;
+        position: absolute;
+        top: -3px;
+        left: -30px;
+    }
+    .banner {
+        width: 70%;
+        translate: -20px;
+    }
 }

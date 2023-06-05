@@ -169,6 +169,12 @@
     position: relative;
 }
 
+.booking:hover  {
+    border-left: solid thin #fffc03;
+    border-bottom: solid #fffc03;
+    cursor: pointer;
+}
+
 .restologo  {
     text-align: center;
     height: 100%;
@@ -189,6 +195,9 @@
     padding-top: 10px;
     line-height: 10px;
     text-transform: uppercase;
+}
+.customername  {
+    color:#fffc03;
 }
 
 .status p{
@@ -221,7 +230,9 @@
     border-radius: 15px;
     color: aliceblue;
 }
-
+.modal-content .form-control    {
+    font-weight: 400;
+}
 .customer-info  {
     border: solid thin #fffc03;
     border-radius: 15px;
@@ -280,4 +291,36 @@ input[type=number]::-webkit-outer-spin-button  {
     background-color:black;
     color: #fffc03;
     border: solid thin chartreuse;
+}
+
+.completeaddress    {
+    border: solid thin #fffc03;
+    border-radius: 15px;
+    padding: 15px;
+    height: 100px;
+}
+
+
+.orderdetails   input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mode   input{
+    margin-bottom: 40px;
+}
+
+.paymentdetails   {
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.amountmode p{
+    font-weight: bolder;
+}
+
+#dashorder  h6{
+    background-color: white;
+    color: black;
+    height: 100%;
 }

@@ -64,7 +64,31 @@
                     </ul>
                 </div>
 
+                <div class="booking row" data-bs-toggle="modal" data-bs-target="#dashorder">
+                    
+                    <div class="restologo col-2">
+                            <img src="./images/1.jpg" alt="logo">
+                            <p>5C Sushi Homes</p>
+                    </div>
 
+                    <div class="customer col">
+                        <div class="customername">
+                            <h4>Jamie Delina</h6>
+                        </div>
+                        <div class="invoice">
+                            <p>Invoice# 1</p>
+                        </div>
+                        <div class="status">
+                            <p style="color:white"><i class="bi bi-check2"></i> Pending 08:55 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="riderlogo col-2">
+                        <img src="./images/blankrider.png" alt="logo">
+                        <p>Dennis Sumbero</p>
+                    </div>
+                    
+                </div>
                 <div class="booking row">
                     
                     <div class="restologo col-2">
@@ -73,7 +97,7 @@
                     </div>
 
                     <div class="customer col">
-                        <div class="Customer Name">
+                        <div class="customername">
                             <h4>Paul Mojica</h6>
                         </div>
                         <div class="invoice">
@@ -561,9 +585,99 @@
         </div>
       </div>
     </div>
+<!-- ORDER DETAILS DASHBOARD -->
+
+<div class="modal fade" data-bs-theme="dark" id="dashorder" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="dashorderLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="dashorderLabel">Order Detail</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="customer-info">
+            <h6><center>Order Status</center></h6>
+            <p>Delivery Notes: look for benjohn</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" disabled>
+                <label class="form-check-label" for="flexCheckDefault">Accepted</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">Ready</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"disabled>
+                <label class="form-check-label" for="flexCheckDefault">Picked Up</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"disabled>
+                <label class="form-check-label" for="flexCheckChecked">Delivered</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">Cancelled</label>
+            </div>
+            <h6><center>Delivery Rider</center></h6>
+
+
+
+
+            <span><a href="#" data-bs-target="#call" data-bs-toggle="modal"><i class="bi bi-telephone"></i></a></span>
+            <label for="call"><i class="bi bi-person-circle"></i></label><br>
+            <h6><center>Invoice Details</center></h6>
+            <p>Invoice# 1</p>
+            <span><a href="#" data-bs-target="#call" data-bs-toggle="modal"><i class="bi bi-paperclip"></i></a></span>
+                <div class="amountmode">
+                    <p>Cash:</p>
+                    <p><i class="bi bi-file-ppt"></i> 500.00</p>
+                </div>
+
+            <h6><center>Total Amount is 500.00</center></h6>
+
+         
+
+            <label for="customernumber"><i class="bi bi-phone"></i></label><br>
+            <label for="customeraddress"><i class="bi bi-house-lock"></i></i></label><br>
+          </div>
+          <div class="customeraddress">
+            <h5><center>Customer Details</center></h5>
+            <span><a href="#" data-bs-target="#call" data-bs-toggle="modal"><i class="bi bi-telephone"></i></a></span>
+            <label for="customername"><i class="bi bi-person-circle"></i><p>Jamie Delina</p><p>Zone 3: ( Manila ) Kodego Office Manila</p></label><br>
+            <span><a class="icon-link disabled" href="#"><i class="bi bi-house-add-fill"></i><i class="bi bi-geo"></i></a></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-bs-dismiss="modal" aria-label="Close">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 
     </body>
 
 
+<div class="modal fade" id="call" aria-hidden="true" aria-labelledby="callLabel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <center><h1 class="modal-title fs-5" id="callLabel">Make Call</h1></center>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6>Are you sure you want to call?</h6>
+        </div>
+        <div class="modal-footer d-flex">
+            <button class="btn" data-bs-target="#dashorder" data-bs-toggle="modal">Cancel</button>
+            <button class="btn" data-bs-target="#" data-bs-toggle="modal">Call</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -316,27 +316,35 @@ body .icons a:hover {
     text-align: left;
 }
 
-.section5::before {
+/* .section5::before {
     background-image: url('./images/parallax4.jpg');
     background-size: contain;
     content: '';
     position: absolute;
     inset: 0;
     opacity: .05;
-}
+} */
 
 .section5content {
-    isolation: isolate;
     padding: 50;
+    margin: 50px 0;
 }
 
 .section5content .card {
+    isolation: isolate;
     display: inline-block;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: solid aqua;
+    background-color: rgb(218, 41, 198);
+
 }
 
 .section5content .card-body {
-  background-color: white;
+  border: solid chartreuse;
+}
+
+.card-image-top {
+  width: 50%;
 }
 
 .footer {
@@ -412,7 +420,7 @@ tr {
     letter-spacing: 10px;
 }
 
-.card {
+.card-carousel .card {
     position: relative;
     height: 100%;
     background: rgba(255, 255, 255, 0.05);
@@ -451,7 +459,7 @@ tr {
     object-fit: contain;
 }
 
-.card h2 {
+.card-carousel .card h2 {
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -506,7 +514,7 @@ tr {
     align-items: center;
 }
 
-.card {
+.card-carousel .card {
     margin: 8px;
     width: calc(100%/5);
 }
@@ -619,10 +627,11 @@ tr {
         padding-right: 10px;
         transform: translatey(-150px);
     }
-    .card:not(:first-child) {
+    
+    #restopartners .card:not(:first-child) {
         display: none;
     }
-    .card {
+    #restopartners .card {
         width: 100%;
         padding-top: 20px;
         border-radius: 50px;
@@ -634,10 +643,8 @@ tr {
 
     .section5content .card  {
       display: inline;
+      margin: 10px;
     }
 
-    .section5content .card-body p {
-      padding: 33px;
-    }
 
 }

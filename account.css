@@ -324,3 +324,56 @@ input[type=number]::-webkit-outer-spin-button  {
     color: black;
     height: 100%;
 }
+
+
+@media screen and (max-width:640px) {
+    
+    .sidebar    {
+        display: none;
+    }
+
+    .navbaricons    {
+        transform: translateY(-200px);
+    }
+
+    .menu   {
+        height: 15vh;
+        padding-left: 80px;
+        padding-bottom: 0;
+    }
+
+    .menu h5    {
+        display: none;
+    }
+    
+    .menu p {
+        display: none;
+    }
+
+    .hiddencalendar {
+        display: none;
+    }
+    
+    .nav    {
+        display: flex;
+        width: 100vw;
+    }
+
+    .orderlist  {
+        margin-top: 0;
+    }
+
+    .booking    {
+        margin-left: 50px;
+        width: 90%;
+        scale: 90%;
+    }
+
+    .booking .restologo{
+        display: none;
+    }
+
+
+
+
+}

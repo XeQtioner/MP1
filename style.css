@@ -919,3 +919,16 @@ tr {
     top: 100px;
 
 }
+
+.banner {
+    animation: dmove 2s;
+}
+
+@keyframes dmove {
+    0% {
+        left: -90%
+    }
+    100% {
+        opacity: 1;
+    }
+}

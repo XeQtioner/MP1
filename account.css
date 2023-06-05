@@ -216,7 +216,6 @@
     clip-path: circle();
     border-radius: 45px;
     object-fit: contain;
-    border: solid thin black;
 }
 
 .riderlogo .logoname   {
@@ -340,6 +339,7 @@ input[type=number]::-webkit-outer-spin-button  {
         height: 15vh;
         padding-left: 80px;
         padding-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .menu h5    {
@@ -359,18 +359,32 @@ input[type=number]::-webkit-outer-spin-button  {
         width: 100vw;
     }
 
-    .orderlist  {
-        margin-top: 0;
-    }
 
     .booking    {
         margin-left: 50px;
         width: 90%;
         scale: 90%;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 10%;
+        transform: translateY(-40px);
     }
 
     .booking .restologo{
         display: none;
+    }
+
+    .riderlogo p    {
+        display: none;
+    }
+
+    .riderlogo img  {
+        height: 100px;
+        scale: 400%;
+    }
+
+    .booking h4  {
+        font-size: small;
     }
 
 

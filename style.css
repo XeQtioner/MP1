@@ -906,3 +906,12 @@ tr {
 #distributors p  {
     text-align: justify;
 }
+
+
+.adsvid{
+    position: fixed;
+    right: 0;
+    width: 24%;
+    top: 100px;
+
+}

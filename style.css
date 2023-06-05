@@ -316,14 +316,14 @@ body .icons a:hover {
     text-align: left;
 }
 
-/* .section5::before {
+.section5::before {
     background-image: url('./images/parallax4.jpg');
     background-size: contain;
     content: '';
     position: absolute;
     inset: 0;
     opacity: .05;
-} */
+}
 
 .section5content {
     padding: 50;
@@ -332,16 +332,12 @@ body .icons a:hover {
 
 .section5content .card {
     isolation: isolate;
+    width: 40%;
     display: inline-block;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    border: solid aqua;
-    background-color: rgb(218, 41, 198);
-
 }
 
-.section5content .card-body {
-  border: solid chartreuse;
-}
+
 
 .card-image-top {
   width: 50%;
@@ -584,6 +580,7 @@ tr {
         text-decoration: none;
         color: black;
         text-align: right;
+        padding-left: 10px;
     }
     .footer li {
         padding-right: 30px;
@@ -642,8 +639,9 @@ tr {
     }
 
     .section5content .card  {
-      display: inline;
-      margin: 10px;
+        display: block;
+        padding: 33px;
+        width: 100%;
     }
 
 

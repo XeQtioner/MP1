@@ -278,7 +278,7 @@
       </div>
 
 <!-- filled with existing 3 addresses plus radio -->
-      <div class="modal fade" data-bs-theme="dark" id="filled2" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="filled2Label" tabindex="-1">
+      <div class="modal" data-bs-theme="dark" id="filled2" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="filled2Label" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -304,7 +304,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button class="btn" data-bs-target="#placeorder" data-bs-toggle="modal">Continue</button>
+              <button class="btn" data-bs-target="#placeorder2" data-bs-toggle="modal">Continue</button>
             </div>
           </div>
         </div>
@@ -554,12 +554,57 @@
             </div> 
           </div>
             <div class="modal-footer">
+              <button class="btn" data-bs-target="" data-bs-toggle="modal"><a href="dashboard2.html"> Place Order</a></button>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+
+      <div class="modal fade" data-bs-theme="dark" id="placeorder2" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="placeorder2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="placeorder2Label">Delivery Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="completeaddress">
+                <h6><center>Complete Address</center></h6>
+                <label for="customeraddress"><i class="bi bi-house-lock"></i> Zone 1: ( Sahudulan ): B1 L12 Ph2 Filinvest Sahudulan Tanza Cavite</label><br>
+              </div>
+              <div class="paymentdetails row needs-validation" novalidate>
+                <h6><center>Payment Details</center></h6>
+                <div class="mode col-6">
+                
+                  <input class="form-check-input" type="radio" name="address" id="address1" required><label class="form-check-label" for="address1">&nbsp;&nbsp;Cash</label><br>
+                  <input class="form-check-input" type="radio" name="address" id="address2" required><label class="form-check-label" for="address2">&nbsp;&nbsp;Online</label><br>
+                  <input class="form-check-input" type="radio" name="address" id="address3" required><label class="form-check-label" for="address3">&nbsp;&nbsp;Credit Card</label><br>
+                </div>
+                <div class="orderdetails col-6">
+                  <div class="form-floating">
+                    <input class="form-control" id="invoice" type="text"  placeholder="Invoice#" required>
+                    <label for="invoice"><p><i class="bi bi-receipt"></i></i> Invoice#</p></label>
+                 </div>
+                 <div class="form-floating">
+                  <input class="form-control" id="oderamount" type="number"  placeholder="Order Amount" required>
+                  <label for="orderamount"><p><i class="bi bi-file-ppt"></i> Order Amount</p></label>
+               </div>
+              </div>
+              <div class="form-floating">
+                <input class="form-control" id="notes" type="text"  placeholder="Delivery Notes ( Optional )">
+                <label for="notes"><p><i class="bi bi-journal-plus"></i> Delivery Notes ( Optional )</p></label>
+             </div>
+            </div> 
+          </div>
+            <div class="modal-footer">
               <button class="btn" data-bs-target="" data-bs-toggle="modal">Place Order</button>
             </div>
           </div>
  
         </div>
       </div>
+
     </div>
 
     </body>

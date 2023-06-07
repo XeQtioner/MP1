@@ -212,7 +212,7 @@
                     <h3>To Give Your Business a Boost</h3>
                 </div>
     
-                <div class="col me-1" style="display: flex; justify-content: center; align-items: center; width: 200px;">
+                <div class="col me-1" style="display: flex; justify-content: center; align-items: center; width: 200px;" data-bs-toggle="modal" data-bs-target="#becomememberModal">
                     <button style="width: 210px; height: 45px; border-radius: 15px; background-color: #fffc03; font-weight: 700; letter-spacing: 2px;">BECOME A PARTNER</button>
                 </div>
             </div>
@@ -461,10 +461,38 @@
             <div class="quicklinks col-3">
                 <h4>QUICK LINKS</h4>
                 <ul>
-                    <li><a href=""><i class="bi bi-caret-right"></i>  Careers</a></li>
+                    <li><a href="" data-bs-toggle="modal" data-bs-target="#careerModal"><i class="bi bi-caret-right"></i>  Careers</a></li>
                     <li><a href=""><i class="bi bi-caret-right"></i>  Gallery</a></li>
                     <li><a href=""><i class="bi bi-caret-right"></i>  Testimonials</a></li>
                 </ul>
+
+                <div class="modal fade" data-bs-theme="dark" id="careerModal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="careerModalLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="careerModalLabel">Job Hiring</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="modal-body">
+                          <div class="needs-validation" novalidate>
+                            <h6>Select a position to inquire:</h6><br>
+                            <input class="form-check-input" type="radio" name="position" id="rider" required>
+                            <label class="form-label" for="rider">Delivery Rider</label><br><br>
+                            <input class="form-check-input" type="radio" name="position" id="agent" required>
+                            <label class="form-label" for="agent">Sales Agent</label>
+                            <div class="invalid-feedback">Please choose one.</div> 
+                          </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                          <button class="submit" style=" border-radius:10px; padding: 5px; border: solid thin black ; background-color: #fffc03;"><a href="applicantsform.html" target="_blank">Continue</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+           
             </div>
 
             <div class="allrightreserve col">
@@ -496,11 +524,75 @@
                     <h3>Villena c",</h3>
                 </div>
 
-            <div class="col me-1" style="display: flex; justify-content: center; align-items: center; width: 200px;">
-                <button style="width: 210px; height: 45px; border-radius: 15px; background-color: #fffc03; font-weight: 700; letter-spacing: 2px;">CONTACT US</button>
+                <div class="col me-1" style="display: flex; justify-content: center; align-items: center; width: 200px;">
+                    <button data-bs-toggle="modal" data-bs-target="#contactusModal" style="width: 210px; height: 45px; border-radius: 15px; background-color: #fffc03; font-weight: 700; letter-spacing: 2px;">CONTACT US</button>
+                </div>
+
             </div>
+
         </div>
-    </div>
+                <div class="modal fade" data-bs-theme="dark" id="contactusModal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="contactusModalLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="contactusModalLabel">Contact Us</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="modal-body">
+                          <div class="needs-validation" novalidate>
+
+                            <label class="form-label" for="name">Fullname</label>
+                            <input class="form-control" type="text" id="name">
+
+                            <label class="form-label" for="email">Email address</label>
+                            <input class="form-control" type="email" id="email">
+
+                            <label class="form-label" for="textarea">Message</label>
+                            <textarea class="form-control" type="textarea" id="textarea" rows="5"></textarea>
+
+                          </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                          <button class="submit" style=" border-radius:10px; padding: 5px; border: solid thin black ; background-color: #fffc03;"><a href="#">Send</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="modal fade" data-bs-theme="dark" id="becomememberModal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="becomememberModalLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="becomememberModalLabel">Application for Partnership</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="modal-body">
+                          <div class="needs-validation" novalidate>
+      
+                            <label class="form-label" for="comstore">Name of Company/Store</label>
+                            <input class="form-control" type="text" id="comstore">
+                            
+                            <label class="form-label" for="loc">Store Location</label>
+                            <input class="form-control" type="text" id="loc">
+
+                            <label class="form-label" for="email">Email address</label>
+                            <input class="form-control" type="email" id="email">
+
+                            <label class="form-label" for="textarea">Message</label>
+                            <textarea class="form-control" type="textarea" id="textarea" rows="5"></textarea>
+
+                          </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                          <button class="submit" style=" border-radius:10px; padding: 5px; border: solid thin black ; background-color: #fffc03;"><a href="#">Send</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 </div>            
 

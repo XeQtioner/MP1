@@ -314,7 +314,7 @@ body .icons a:hover {
 
 .section3content {
     isolation: isolate;
-    padding: 50;
+    padding: 50px;
 }
 
 .section5 {
@@ -708,7 +708,17 @@ tr {
     right: 0;
     width: 24%;
     top: 100px;
+}
 
+#contactusModal .needs-validation, #becomememberModal .needs-validation    {
+    width: 90%;
+}
+
+#careerModal .modal-body {
+    height: 200px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 @media screen and (max-width:640px) {
@@ -934,6 +944,8 @@ tr {
     .download img   {
         display: none;
     }
+
+ 
 }
 
 

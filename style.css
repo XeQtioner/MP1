@@ -530,7 +530,6 @@ tr {
     justify-content:center ;
     align-items: center;
     position: relative;
-
 }
 
 .wallpost1 .card {
@@ -539,9 +538,17 @@ tr {
     margin: 50px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    
 }
 
+.sdilogo    {
+    width: 40%;
+}
+
+.sdi p{
+    margin: 0 100px;
+    text-align: justify;
+    font-weight: light;
+}
 
 .parent {
     display: grid;

@@ -693,8 +693,8 @@ tr {
 }
 
 .wallpost2 .card {
-    width: 25%;
-    margin: 10px;
+    width: 20%;
+    margin: 40px;
     margin-top: 0;
     display: inline-block;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -902,15 +902,20 @@ tr {
     }
 
     .wallpost2 .card {
-        width: 80%;
+        width: 70%;
         margin: 20px;
         display: block;
     }
 
     .adsvid {
         display: none;
-    }   
+    }
+
+    .sdi p  {
+        margin: 0 15px;
+    }
 }
+
 
 @media screen and (max-width:820px) {
     
@@ -945,6 +950,7 @@ tr {
         width: 70%;
         translate: -20px;
     }
+    
 }
 
 @media screen and (max-width:1240px) {

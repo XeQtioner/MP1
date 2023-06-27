@@ -47,40 +47,41 @@ body::before {
         <img style="position: fixed; left: 0px;" src="./images/002.gif" alt="scooter">
         <h3>Personal Data Sheet</h3>
         <caption><b>Personal Information</b></caption>
+        <form action="">
         <table>
             <tr>
                 <td>Surname</td>
-                <td><input type="text"></td>
+                <td><input type="text" required></td>
                 <td colspan="2">Upload Picture</td>
             </tr>
             <tr>
                 <td>Firstname</td>
-                <td><input type="text"></td>
+                <td><input type="text" required></td>
                 <td colspan="2"><input type="file"></td>
             </tr>
 
             <tr>
                 <td>Middlename</td>
-                <td><input type="text"></td>
+                <td><input type="text" required></td>
                 <td>Name of Extensions</td>
                 <td><input type="text"></td>
             </tr>
 
             <tr>
                 <td>Date of Birth</td>
-                <td><input type="date"></td>
+                <td><input type="date" required></td>
                 <td rowspan="2">Residential Address</td>
                 <td rowspan="2"><textarea></textarea></td>
             </tr>
 
             <tr>
                 <td>Place of Birth</td>
-                <td><input type="text"></td>
+                <td><input type="text" required></td>
             </tr>
 
             <tr>
                 <td>Sex</td>
-                <td><input type="radio" name="sex" value="male"><label for="male">Male</label><input type="radio" name="sex" value="female"><label for="female">Female</label></td>
+                <td><input type="radio" name="sex" value="male"><label for="male" required>Male</label><input type="radio" name="sex" value="female" required><label for="female">Female</label></td>
                 <td>Zipcode</td>
                 <td><input type="number"></td>
             </tr>
@@ -241,6 +242,7 @@ body::before {
             <button class="btn"><a bref="index.html">Back</a></button>
             <button class="btn"><a bref="index.html">Reset</a></button>
             <button class="btn"><a bref="index.html">Submit</a></button>
+        </form>
 </body>
 
 </html>

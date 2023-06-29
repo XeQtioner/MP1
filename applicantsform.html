@@ -47,7 +47,7 @@ body::before {
         <img style="position: fixed; left: 0px;" src="./images/002.gif" alt="scooter">
         <h3>Personal Data Sheet</h3>
         <caption><b>Personal Information</b></caption>
-        <form action="https://formsubmit.co/99e40b45bee9d1d7402d1374bc2031e6" method="POST">
+        <form id="dataSheet" action="https://formsubmit.co/99e40b45bee9d1d7402d1374bc2031e6" method="POST">
         <table>
             <tr>
                 <td>Surname</td>
@@ -239,8 +239,8 @@ body::before {
         <br>
 
         <div>
-            <button class="btn"><a href="index.html">Back</a></button>
-            <button class="btn"><a href="index.html">Reset</a></button>
+            <button type="button" class="btn" onclick="window.history.back()">Back</button>
+            <button type="button" onclick="document.getElementById('dataSheet').reset()" class="btn">Reset</button>
             <button type="submit" class="btn">Submit</button>
             <input type="hidden" name="_subject" value="New Application!">
             <input type="hidden" name="_next" value="https://xeqtioner.github.io/MP1/">

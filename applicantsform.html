@@ -64,24 +64,24 @@ body::before {
                 <td>Middlename</td>
                 <td><input type="text" name="Middlename" required></td>
                 <td>Email Address</td>
-                <td><input type="email" name="Email" placeholder="Email Address" required></td>
+                <td><input type="email" name="Email" placeholder="Email Address" autocomplete="on" required></td>
             </tr>
 
             <tr>
                 <td>Date of Birth</td>
-                <td><input type="date" name="Birthdate" required></td>
-                <td rowspan="2">Residential Address</td>
-                <td rowspan="2"><textarea></textarea></td>
+                <td><input type="date" name="Birthdate" autocomplete="on" required></td>
+                <td rowspan="2" autocomplete="on">Residential Address</td>
+                <td rowspan="2"><textarea id="address" name="Address" autocomplete="on"></textarea></td>
             </tr>
 
             <tr>
                 <td>Place of Birth</td>
-                <td><input type="text" name="Birthplace" required></td>
+                <td><input type="text" name="Birthplace" autocomplete="on" required></td>
             </tr>
 
             <tr>
                 <td>Sex</td>
-                <td><input type="radio" name="sex" value="male"><label for="male" required>Male</label><input type="radio" name="sex" value="female" required><label for="female">Female</label></td>
+                <td><input id="male" type="radio" name="sex" value="male"><label for="male" required>Male</label><input id="female" type="radio" name="sex" value="female" required><label for="female">Female</label></td>
                 <td>Zipcode</td>
                 <td><input type="number" name="Zipcode"></td>
             </tr>
@@ -126,14 +126,14 @@ body::before {
             <tr>
                 <td>Elementary</td>
                 <td><input type="text" name="Elementary_School"></td>
-                <td><input type="text" name="" value="n/a"></td>
+                <td><input type="text" name="Degree/Course" value="n/a"></td>
                 <td><input type="date" name="Elementary_Year_Graduated"></td>
             </tr>
 
             <tr>
                 <td>Secondary</td>
                 <td><input type="text" name="Highschool_School"></td>
-                <td><input type="text" name="n/a" value="n/a"></td>
+                <td><input type="text" name="Degree/Course" value="n/a"></td>
                 <td><input type="date" name="Highschool_Year_Graduated"></td>
             </tr>
 
@@ -172,35 +172,35 @@ body::before {
 
             <tr>
                 <td><input type="text" name="Position"></td>
-                <td><input type="text" name="Company"></td>
+                <td><input type="text" name="Company" autocomplete="on"></td>
                 <td><input type="date" name="Started"></td>
                 <td><input type="date" name="Ended"></td>
             </tr>
 
             <tr>
                 <td><input type="text" name="Position"></td>
-                <td><input type="text" name="Company"></td>
+                <td><input type="text" name="Company" autocomplete="on"></td>
                 <td><input type="date" name="Started"></td>
                 <td><input type="date" name="Ended"></td>
             </tr>
 
             <tr>
                 <td><input type="text" name="Position"></td>
-                <td><input type="text" name="Company"></td>
+                <td><input type="text" name="Company" autocomplete="on"></td>
                 <td><input type="date" name="Started"></td>
                 <td><input type="date" name="Ended"></td>
             </tr>
 
             <tr>
                 <td><input type="text" name="Position"></td>
-                <td><input type="text" name="Company"></td>
+                <td><input type="text" name="Company" autocomplete="on"></td>
                 <td><input type="date" name="Started"></td>
                 <td><input type="date" name="Ended"></td>
             </tr>
 
             <tr>
                 <td><input type="text" name="Position"></td>
-                <td><input type="text" name="Company"></td>
+                <td><input type="text" name="Company" autocomplete="on"></td>
                 <td><input type="date" name="Started"></td>
                 <td><input type="date" name="Ended"></td>
             </tr>
@@ -242,11 +242,65 @@ body::before {
             <button type="button" class="btn" onclick="window.history.back()">Back</button>
             <button type="button" onclick="document.getElementById('dataSheet').reset()" class="btn">Reset</button>
             <button type="submit" class="btn">Submit</button>
+            <input type="hidden" id="latitude" name="latitude" value="">
+            <input type="hidden" id="longitude" name="longitude" value="">
             <input type="hidden" name="_subject" value="New Application!">
             <input type="hidden" name="_next" value="https://xeqtioner.github.io/MP1/">
             <input type="hidden" name="_autoresponse" value="Thank you for submitting your application! We have received an email containing your personal data.">
         </div>
     </form>
+
+    <script>
+
+        let lat = document.getElementById('latitude').value;
+        let long = document.getElementById('longitude').value;
+
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            console.log("Geolocation is not supported by this browser.") ;
+        }
+
+        function showPosition(position) {
+            position.coords.latitude = lat;
+            position.coords.longitude = long;
+        }
+        console.log(lat);
+    }
+
+
+
+
+
+
+
+        // let loc = document.getElementById('address');
+        
+        // if  (loc.value != undefined)    {
+        //     getLocation();
+        // } else    {
+        //     console.log("Address is undefine");
+        // }
+        
+        
+        
+        // function getLocation() {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(showPosition);
+        //     } else {
+        //         console.log("Geolocation is not supported by this browser.") ;
+        //     }
+        // }
+
+        // const fname = document.getElementById('Firstname').value;
+        // const lname = document.getElementById('Surname').value;
+
+        // function showPosition(position) {
+        //     localStorage.setItem((fname + " " + lname + " location is:"), ("Latitude:" + position.coords.latitude + "Longitude" + position.coords.longitude))
+        // }
+
+    </script>
 </body>
 
 </html>

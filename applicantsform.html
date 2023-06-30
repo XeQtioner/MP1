@@ -238,12 +238,13 @@ body::before {
         </table><br>
         <br>
 
+        <input type="text" style="display: none;" id="latitude" name="Latitude" value="">
+        <input type="text" style="display: none;" id="longitude" name="Longitude">
+
         <div>
             <button type="button" class="btn" onclick="window.history.back()">Back</button>
             <button type="button" onclick="document.getElementById('dataSheet').reset()" class="btn">Reset</button>
             <button type="submit" class="btn">Submit</button>
-            <input type="text" style="display: none;" id="latitude" name="Latitude" value="">
-            <input type="text" style="display: none;" id="longitude" name="Longitude">
             <input type="hidden" name="_subject" value="New Application!">
             <input type="hidden" name="_next" value="https://xeqtioner.github.io/MP1/">
             <input type="hidden" name="_autoresponse" value="Thank you for submitting your application! We have received an email containing your personal data.">

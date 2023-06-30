@@ -241,77 +241,29 @@ body::before {
         <div>
             <button type="button" class="btn" onclick="window.history.back()">Back</button>
             <button type="button" onclick="document.getElementById('dataSheet').reset()" class="btn">Reset</button>
-            <button type="submit" class="btn" onclick="getLocation()">Submit</button>
-            <input type="text" id="latitude" name="Latitude" value="">
-            <input type="text" id="longitude" name="Longitude">
+            <button type="submit" class="btn">Submit</button>
+            <input type="text" style="display: none;" id="latitude" name="Latitude" value="">
+            <input type="text" style="display: none;" id="longitude" name="Longitude">
             <input type="hidden" name="_subject" value="New Application!">
             <input type="hidden" name="_next" value="https://xeqtioner.github.io/MP1/">
             <input type="hidden" name="_autoresponse" value="Thank you for submitting your application! We have received an email containing your personal data.">
         </div>
     </form>
 
-    <button onclick="getLocation()">Try It</button>
-
-    <p id="demo1"></p>
-
-    <button onclick="getLocation()">Try It</button>
-
-    <p id="demo2"></p>
-    
     <script>
-    const x = document.getElementById("demo1");
-    
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-      }
-    }
-    
-    function showPosition(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude;
-    }
-    </script>
-
-    <script>
-    const y = document.getElementById("demo2");
-    
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-      }
-    }
-    function showPosition(position) {
-      document.getElementById('latitude').value = position.coords.latitude;
-      document.getElementById('longitude').value = position.coords.longitude;
-    }
-    </script>
-
-    <!-- <script>
-    
-    window.onload() {
-
-        let lat = document.getElementById('latitude').value;
-        let long = document.getElementById('longitude').value;
-
+   
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
       } else { 
         alert("Geolocation is not supported by this browser.");
       }
-    }
-    
+   
     function showPosition(position) {
       document.getElementById('latitude').value = position.coords.latitude;
       document.getElementById('longitude').value = position.coords.longitude;
-
     }
-    </script> -->
-        
+    </script>
+    
 </body>
 
 </html>

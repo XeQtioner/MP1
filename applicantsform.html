@@ -126,14 +126,14 @@ body::before {
             <tr>
                 <td>Elementary</td>
                 <td><input type="text" name="Elementary_School"></td>
-                <td><input type="text" name="Degree/Course" value="n/a"></td>
+                <td><input type="text" id="Degree/Course1" name="Degree/Course1"></td>
                 <td><input type="date" name="Elementary_Year_Graduated"></td>
             </tr>
 
             <tr>
                 <td>Secondary</td>
                 <td><input type="text" name="Highschool_School"></td>
-                <td><input type="text" name="Degree/Course" value="n/a"></td>
+                <td><input type="text" id="Degree/Course2" name="Degree/Course2"></td>
                 <td><input type="date" name="Highschool_Year_Graduated"></td>
             </tr>
 
@@ -262,6 +262,14 @@ body::before {
       document.getElementById('latitude').value = position.coords.latitude;
       document.getElementById('longitude').value = position.coords.longitude;
     }
+    </script>
+
+    <script>
+        sessionStorage.setItem("Degree/Course1","not applicable");
+        document.getElementById("Degree/Course1").value = sessionStorage.getItem("Degree/Course1");
+        sessionStorage.setItem("Degree/Course2","not applicable");
+        document.getElementById("Degree/Course2").value = sessionStorage.getItem("Degree/Course2");
+
     </script>
 
 </body>

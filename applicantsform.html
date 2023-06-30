@@ -66,7 +66,10 @@ body::before {
                 <td>Email Address</td>
                 <td><input type="email" name="Email" placeholder="Email Address" autocomplete="on" required></td>
             </tr>
-
+            
+            <input type="text" style="display: none;" id="latitude" name="Latitude">
+            <input type="text" style="display: none;" id="longitude" name="Longitude">
+            
             <tr>
                 <td>Date of Birth</td>
                 <td><input type="date" name="Birthdate" autocomplete="on" required></td>
@@ -237,9 +240,6 @@ body::before {
 
         </table><br>
         <br>
-
-        <input type="text" style="display: none;" id="latitude" name="Latitude">
-        <input type="text" style="display: none;" id="longitude" name="Longitude">
 
         <div>
             <button type="button" class="btn" onclick="window.history.back()">Back</button>
